@@ -1353,3 +1353,38 @@ project, since there's no Xcode/swiftc here). Not yet build-verified —
 please rebuild and check: games group under real per-day date headings
 with kickoff times showing, "Board" appears once, and the season/week
 line and any scores/ranks display without stray commas.
+
+## App renamed: Chalk That NFL → Chalk That Gridiron (2026-09-29)
+
+Apple rejected the first App Store submission under Guideline 4.1(a)
+(Copycats), specifically flagging that the app's name included "NFL" —
+a protected NFL trademark — creating an implied official affiliation
+we don't have. Renamed the app to remove the league name from all
+user-facing branding, keeping the "Chalk That" umbrella brand:
+
+- App Store Connect app Name (App Information page)
+- `INFOPLIST_KEY_CFBundleDisplayName` in the Xcode project (both
+  Debug/Release configs) — this is the name shown under the home
+  screen icon
+- `LoginView.swift`: the login screen's stacked "CHALK THAT" / "NFL"
+  wordmark — second line changed to "GRIDIRON"
+- `GuideView.swift`: in-app Guide screen description text
+- `ComingSoonView.swift`: logout confirmation dialog text
+- `README.md`: title and intro description
+
+Left unchanged (internal-only, not reviewed by Apple, not
+user-facing): the `Chalk That NFL/` Xcode target/folder name itself
+(renaming it is a much larger, riskier operation and isn't required —
+Apple reviews app name/metadata/UI, not source folder or target
+names), Keychain key names (`chalkThatNFL_accessToken`, etc.),
+notification names, and file header comments. The backend repo name
+(`ai-application-nfl`) and the separate web app's own branding are
+untouched — out of scope for this iOS-app-only rejection, and not
+something to change without a separate decision.
+
+Note for later: the sibling Chalk That NBA app almost certainly has
+the same issue waiting for it (NBA is the same kind of protected
+league trademark) — worth renaming proactively before submitting it,
+rather than waiting for the same rejection.
+
+Next: resubmit for App Store review with the new name/metadata.

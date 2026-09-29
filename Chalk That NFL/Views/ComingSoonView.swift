@@ -1,6 +1,6 @@
 //
 //  ComingSoonView.swift
-//  Chalk That NFL
+//  Chalk That Gridiron
 //
 //  Placeholder root for a nav group's screens before they're built —
 //  temporary scaffolding for the tab shell, not a real screen. Each tab
@@ -72,7 +72,7 @@ struct AccountMenuButton: View {
                 .foregroundStyle(Color.ink)
         }
         .confirmationDialog(
-            "Log out of Chalk That NFL?",
+            "Log out of Chalk That Gridiron?",
             isPresented: $showingConfirmation,
             titleVisibility: .visible
         ) {

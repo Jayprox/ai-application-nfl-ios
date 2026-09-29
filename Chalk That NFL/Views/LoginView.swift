@@ -87,7 +87,7 @@ struct LoginView: View {
             Text("CHALK THAT")
                 .font(.brandDisplay(28, weight: .semibold))
                 .foregroundStyle(Color.ink)
-            Text("NFL")
+            Text("GRIDIRON")
                 .font(.brandDisplay(28, weight: .semibold))
                 .foregroundStyle(Color.inkFaint)
         }

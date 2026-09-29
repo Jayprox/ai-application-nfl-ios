@@ -1,12 +1,12 @@
-# Chalk That NFL — iOS
+# Chalk That Gridiron — iOS
 
-A native SwiftUI iOS app for **Chalk That NFL**, an NFL stats/research/betting-insights app. This app is a second frontend client of the existing `ai-application-nfl` backend — the same backend the "web" app (a React app) already uses. It is a sister project to a similar app, Chalk That MLB iOS, built the same way.
+A native SwiftUI iOS app for **Chalk That Gridiron**, an NFL stats/research/betting-insights app. This app is a second frontend client of the existing `ai-application-nfl` backend — the same backend the "web" app (a React app) already uses. It is a sister project to a similar app, Chalk That MLB iOS, built the same way.
 
 If you're an AI assistant (or a person) picking this project up for the first time — whether continuing in Claude, or in ChatGPT, Cursor, Copilot, or anywhere else — this file plus `HANDOFF.md` are meant to get you fully oriented without needing anything else. Read this file first for the big picture, then `HANDOFF.md` for the detailed, chronological "why was it built this way" decision log and the current in-progress work.
 
 ## What this app is
 
-Chalk That NFL (iOS) shows the same NFL data as the Chalk That NFL web app — games, teams, players, stats, betting odds, edge/rankings signals, prop lines, a research-assistant chat, and a "portfolio agent" that logs picks and tracks a leaderboard — in a native iOS interface instead of a browser.
+Chalk That Gridiron (iOS) shows the same NFL data as the Chalk That NFL web app — games, teams, players, stats, betting odds, edge/rankings signals, prop lines, a research-assistant chat, and a "portfolio agent" that logs picks and tracks a leaderboard — in a native iOS interface instead of a browser.
 
 **Hard rule for this project: this app never invents, derives, or estimates a number.** Every value on screen comes straight from the backend's API. If the backend doesn't return it, the app doesn't show it (or shows an honest empty/error state) rather than making something up. The goal is also to visually mirror the web app as closely as normal iOS conventions allow — same layout, same information, same badges/labels — not to redesign it.
 

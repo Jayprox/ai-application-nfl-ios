@@ -1,6 +1,6 @@
 //
 //  GuideView.swift
-//  Chalk That NFL
+//  Chalk That Gridiron
 //
 //  A permanent, always-accessible reference explaining what every part
 //  of the app does and how the pieces fit together. Added 2026-09-24 on
@@ -146,7 +146,7 @@ struct GuideView: View {
         NavigationStack {
             List {
                 Section {
-                    Text("What every part of Chalk That NFL does, and how the pieces connect. Come back here any time — this screen doesn't move.")
+                    Text("What every part of Chalk That Gridiron does, and how the pieces connect. Come back here any time — this screen doesn't move.")
                         .font(.brandBody(14))
                         .foregroundStyle(Color.inkDim)
                         .padding(.vertical, 4)
